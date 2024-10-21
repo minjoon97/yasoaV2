@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/minjoon97/yasoaV2.git",
+  "homepage": "https://minjoon97.github.io/yasoaV2",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
