@@ -5,7 +5,7 @@ export const MainVisual = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/attraction_title.jpg);
+  background-image: url(attraction_title.jpg);
   background-size: cover;
   background-position: center;
   position: relative;

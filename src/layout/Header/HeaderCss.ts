@@ -24,8 +24,8 @@ export const Logo = styled.h1<{ path: string }>`
   height: 30px;
   background-image: ${(props) =>
     props.path === "/detail" || props.path === "/mypage"
-      ? "url(public/logo_point.png)"
-      : "url(public/logo_white.png)"};
+      ? "url(logo_point.png)"
+      : "url(logo_white.png)"};
   background-size: contain;
   background-repeat: no-repeat;
 `;
