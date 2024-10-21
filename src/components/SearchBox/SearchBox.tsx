@@ -1,6 +1,6 @@
 import { Wrapper, Select, Input, SearchBtn } from "./SearchBoxCss";
 import useStore from "../../store";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useState } from "react";
 
 const SearchBox = () => {
@@ -8,6 +8,7 @@ const SearchBox = () => {
   const navigate = useNavigate();
   const [semiKeyword, setSemiKeyword] = useState("");
   const [semiarea, setSemiarea] = useState(0);
+  const location = useLocation();
 
   return (
     <Wrapper>
