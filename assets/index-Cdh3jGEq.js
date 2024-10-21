@@ -82,7 +82,7 @@ Error generating stack: `+o.message+`
 `,y1=T.h1`
   width: 65px;
   height: 30px;
-  background-image: ${e=>e.path==="/detail"||e.path==="/mypage"?"url(public/logo_point.png)":"url(public/logo_white.png)"};
+  background-image: ${e=>e.path==="/detail"||e.path==="/mypage"?"url(logo_point.png)":"url(logo_white.png)"};
   background-size: contain;
   background-repeat: no-repeat;
 `,v1=T.ul`
@@ -275,7 +275,7 @@ Error generating stack: `+o.message+`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/festival_title.jpg);
+  background-image: url(festival_title.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -393,7 +393,7 @@ Error generating stack: `+o.message+`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/lodgment_title.png);
+  background-image: url(lodgment_title.png);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -432,7 +432,7 @@ Error generating stack: `+o.message+`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/attraction_title.jpg);
+  background-image: url(attraction_title.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
