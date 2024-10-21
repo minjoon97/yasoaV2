@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Top = styled.div`
-  padding-top: 160px;
   text-align: center;
   span {
     padding: 0.5rem;
@@ -51,5 +50,10 @@ export const TextWrapper = styled.div`
   p > span {
     color: black;
     font-weight: 600;
+  }
+
+  a {
+    text-decoration: underline;
+    color: inherit;
   }
 `;

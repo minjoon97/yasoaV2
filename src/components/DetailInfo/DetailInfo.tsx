@@ -26,8 +26,6 @@ const DetailInfo: React.FC<DetailInfoProps> = ({ commonData, introData }) => {
     hpUrl = commonData[0].homepage;
     hpLink = commonData[0].homepage;
   }
-  console.log("commondata:", commonData);
-  console.log("introdata:", introData);
   return (
     <>
       <Top>
@@ -43,7 +41,7 @@ const DetailInfo: React.FC<DetailInfoProps> = ({ commonData, introData }) => {
       </Top>
       <Content>
         <ImgWrapper>
-          <img src={commonData[0].firstimage}></img>
+          <img src={commonData[0].firstimage || "defaultImage.png"}></img>
         </ImgWrapper>
         <TextWrapper>
           {isFestival && "eventplace" in introData[0] && (

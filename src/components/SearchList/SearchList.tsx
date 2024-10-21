@@ -17,9 +17,10 @@ const SearchList = () => {
   }, [inView, hasNextPage, fetchNextPage]);
 
   if (error) return <p>Error: {error.message}</p>;
-  const finalData = data?.pages.flatMap((page) => page.items.item) || [];
-
-  console.log(finalData);
+  const finalData =
+    data?.pages[0].totalCount !== 0
+      ? data?.pages.flatMap((page) => page.items.item) || []
+      : [];
 
   return (
     <Wrapper>

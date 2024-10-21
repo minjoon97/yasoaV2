@@ -6,7 +6,7 @@ const Header = () => {
   const store = useStore();
   const location = useLocation();
   return (
-    <HeaderWrapper>
+    <HeaderWrapper path={location.pathname}>
       <Link to="/">
         <Logo path={location.pathname}></Logo>
       </Link>
@@ -44,7 +44,9 @@ const Header = () => {
             관광지
           </li>
         </Link>
-        <li>마이페이지</li>
+        <Link to="/mypage">
+          <li>마이페이지</li>
+        </Link>
       </HeaderNav>
     </HeaderWrapper>
   );

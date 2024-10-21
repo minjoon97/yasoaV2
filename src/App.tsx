@@ -1,6 +1,7 @@
 import "./styles/myreset.css";
 import { Wrapper } from "./styles/App.ts";
 import Header from "./layout/Header/Header.tsx";
+import Footer from "./layout/Footer/Footer.tsx";
 import Main from "./layout/Main/Main.tsx";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <Wrapper>
       <Header></Header>
       <Main></Main>
+      <Footer></Footer>
     </Wrapper>
   );
 }

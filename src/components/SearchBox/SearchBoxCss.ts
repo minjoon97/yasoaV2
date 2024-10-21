@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
 export const Select = styled.select<{ path: string }>`
   width: 200px;
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid
     ${(props) =>
       props.path === "/" ? "rgba(255,255,255,0.5)" : "rgba(0,0,0,0.2)"};
@@ -34,7 +34,7 @@ export const Select = styled.select<{ path: string }>`
 export const Input = styled.input<{ path: string }>`
   flex: 1;
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid
     ${(props) =>
       props.path === "/" ? "rgba(255,255,255,0.5)" : "rgba(0,0,0,0.2)"};
@@ -55,14 +55,16 @@ export const Input = styled.input<{ path: string }>`
 `;
 
 export const SearchBtn = styled.button<{ path: string }>`
-  width: 100px;
-  background-color: white;
-  border: 1px solid ${(props) => (props.path === "/" ? "white" : "#3b2db5")};
-  border-radius: 10px;
-  color: #3b2db5;
+  width: 120px;
+  background-color: ${(props) => (props.path === "/" ? "white" : "#EEEEEE")};
+  border-radius: 5px;
   font-weight: 500;
+  border: none;
+  outline: none;
 
   &:hover {
     cursor: pointer;
+    background-color: ${(props) =>
+      props.path === "/" ? "#EEEEEE" : "#E9E9E9"};
   }
 `;
