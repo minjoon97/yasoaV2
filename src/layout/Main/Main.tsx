@@ -3,7 +3,7 @@ import MainPage from "../../pages/MainPage/MainPage.tsx";
 import FestivalPage from "../../pages/FestivalPage/FestivalPage.tsx";
 import LodgmentPage from "../../pages/LodgmentPage/LodgmentPage.tsx";
 import TourPage from "../../pages/TourPage/TourPage.tsx";
-import MyPage from "../../pages/MyPage/Mypage.tsx";
+import MyPage from "../../pages/MyPage/MyPage.tsx";
 import DetailPage from "../../pages/DetailPage/DetailPage.tsx";
 import { Routes, Route } from "react-router-dom";
 
